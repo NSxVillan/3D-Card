@@ -1,0 +1,28 @@
+
+@media only screen and (max-width: 800px)  {
+
+  .profile {
+    padding: 2rem 3rem;
+  }
+  
+  .username {
+    font-size: 2rem;
+  }
+
+  .handle {
+    font-size: 5vw;
+  }
+
+  p{
+    font-size: 8vw;
+  }
+
+  .profile-actions i{
+    font-size: 7.5vw;
+  }
+
+  .link i {
+    font-size: 8vw;
+  } 
+
+}

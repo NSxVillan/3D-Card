@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+:root{
+  --font: 'Dancing Script', cursive;
+  --border-clr: #00c3e659;
+  --clr: #03fffb;
+  --back-shadow: drop-shadow(0 0 15px --border-clr);
+  --bag-clr: rgba(10, 156, 136, 0.742);
+  --border: 2px solid var(--border-clr);
+  --border-1: 3px solid var(--border-clr);
+  --back: linear-gradient( 135deg, hsla(189, 100%, 45%, 0.5), #2d343f 100%);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  line-height: 1.5;
+}
+
+button {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+#particles-js{ 
+  width: 100%; 
+  height: 100vh;
+  background-color: #000000;
+  position: relative;
+}
+
+.align{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center{
+  position: absolute;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1vw 1.5vw;
+  width: 100%;
+  border-radius: 15px;
+  position: relative;
+  border: var(--border);
+  background-image: var(--back);
+  overflow: hidden;
+}
+
+.profile:hover {
+  filter: var(--back-shadow);
+}
+
+.profile:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: var(--back);
+}
+
+.profile-image {
+  border: var(--border);
+  border-radius: 50%;
+  overflow: hidden;
+  width: 175px;
+  height: 175px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image img {
+  align-self: center;
+  height: 100%;
+}
+
+.profile-image img:hover {
+  scale: 1.1;
+  transition: .2s  all linear;
+}
+
+.col{
+  display: flex;
+  align-items: last baseline;
+  gap: 20px;
+}
+
+.username {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-top: 1vw;
+  font-family: var(--font);
+  font-weight: 700;
+}
+
+.handle {
+  color: var(--clr);
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+p{
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 2.2vw;
+}
+
+p:hover{
+  font-weight: 700;
+  color: var(--clr);
+  cursor: pointer;
+  transition: .3s all ease-in-out;
+}
+
+.profile-actions i{
+  font-size: 5vw;
+}
+
+.profile-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.profile-actions > * {
+  margin: 0 0.25rem;
+}
+
+.btn {
+  border: 0;
+  background-color: transparent;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  line-height: 1;
+  transition: 0.15s ease;
+}
+
+.btn--primary {
+  border-radius: 50px;
+  background-color: var(--border-clr);
+  color: #fff;
+  padding: 0 1.375em;
+}
+
+.NSxVillan:hover {
+  background: var(--bag-clr);
+  border: var(--border-1);
+}
+
+.btn--primary:hover,
+.btn--primary:focus {
+  background-size: 150%;
+}
+
+.btn--icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: var(--border);
+  color: var(--clr);
+}
+
+.btn--icon i{
+  font-size: 2.2vw;
+}
+
+.btn--icon:hover {
+  border-color: var(--border-clr);
+  background: var(--bag-clr);
+}
+
+.profile-links {
+  margin-top: 1.5rem;
+}
+
+.link {
+  color: var(--clr);
+}
+
+.profile-links a {
+  padding: 10px;
+}
+
+.link i {
+  font-size: 2.5vw;
+}
+
+.profile-links a i:hover {
+  font-size: 3vw;
+  filter: drop-shadow(0 0 10px rgb(7, 11, 9));
+  transition: .2s all linear;
+}
+
